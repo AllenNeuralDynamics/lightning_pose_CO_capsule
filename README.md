@@ -1,12 +1,3 @@
-# basic-repo-template
+# Welcome!
 
-[![License](https://img.shields.io/badge/license-MIT-brightgreen)](LICENSE)
-
-Template for a minimal, basic repository for AIND projects.
-
-## Installation
-Describe the steps required for a user to begin using the project.
-
-## Contributing
-Describe how other software developers can contribute to the codebase.
-
+This is a repository for [lightning-pose code ocean capsule](https://codeocean.allenneuraldynamics.org/capsule/5949595/tree)
