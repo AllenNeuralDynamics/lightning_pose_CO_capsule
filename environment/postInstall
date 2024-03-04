@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# git clone https://github.com/danbider/lightning-pose.git
+git clone --branch dynamic_crop https://github.com/danbider/lightning-pose.git
+
+cd lightning-pose
+pip install -e .
+
+pip install ipywidgets
+pip install protobuf==3.20.*
+conda install -c conda-forge jupyterlab
+pip uninstall -y fastapi starlette pydantic
+pip install fastapi starlette pydantic
+pip install moviepy --upgrade
+pip install ffmpeg --upgrade
+
+set -e\
