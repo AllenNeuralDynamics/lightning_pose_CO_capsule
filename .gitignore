@@ -137,3 +137,5 @@ dmypy.json
 
 # MacOs
 **/.DS_Store
+
+code/models/Han_behavior_data/Foraging_Bot-Han_Lucas-2022-04-27/epoch=389-step=23010.ckpt
