@@ -1,0 +1,17 @@
+num_keypoints: 17
+num_targets: 34
+backbone: resnet50_animal_ap10k
+downsample_factor: 2
+pretrained: true
+output_shape:
+- 64
+- 64
+torch_seed: 0
+lr_scheduler: multisteplr
+lr_scheduler_params:
+  gamma: 0.5
+  milestones:
+  - 150
+  - 200
+  - 250
+image_size: 256
