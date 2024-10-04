@@ -276,7 +276,7 @@ def dlc2lp(
 def ckpt_path_from_base_path(
     base_path: str,
     model_name: str,
-    version: int,
+    version: int = None,
     logging_dir_name: str = "tb_logs/",
 ) -> str:
     """Given a path to a hydra output with trained model, extract the model .ckpt file.
