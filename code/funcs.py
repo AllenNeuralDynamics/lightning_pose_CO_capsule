@@ -7,11 +7,16 @@ import os
 import shutil
 
 from typing import List
+from lightning_pose.utils.io import (
+    check_video_paths,
+    return_absolute_path,
+)
+from moviepy.editor import VideoFileClip
+import copy
 
-# import yaml
-# from moviepy.editor import VideoFileClip
 # from PIL import Image
 # import json
+# import yaml
 
 from lightning_pose.utils.predictions import predict_dataset
 from lightning_pose.utils.scripts import (
@@ -23,6 +28,7 @@ from lightning_pose.utils.scripts import (
     get_model,
     compute_metrics,
 )
+from lightning_pose.utils import pretty_print_str
 
 def get_keypoint_names(csv_file: str, header_rows: List[int]) -> List[str]:
     """ get the bodypart names given the .csv file
