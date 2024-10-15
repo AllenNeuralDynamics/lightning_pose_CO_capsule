@@ -1,2 +1,10 @@
 metadata_version: 1
 name: lightning-pose-behavior-data-training-testing
+description: A tutorial to show (1) how to generate a lightning-pose (LP) dataset
+  and train a LP model  (2) how to load a trained LP model and perform prediction
+  and evaluation on the testing videos.
+tags:
+- Behavior
+authors:
+- name: Di Wang
+- name: Shailaja Akella

@@ -1,12 +1,12 @@
 num_keypoints: 17
-num_targets: 34
-backbone: resnet50_animal_ap10k
+num_targets: null
+backbone: resnet50
 downsample_factor: 2
 pretrained: true
 output_shape:
 - 64
 - 64
-torch_seed: 0
+torch_seed: 44
 lr_scheduler: multisteplr
 lr_scheduler_params:
   gamma: 0.5
@@ -14,4 +14,5 @@ lr_scheduler_params:
   - 150
   - 200
   - 250
-image_size: 256
+last_resnet_layer_to_get: -3
+do_context: false

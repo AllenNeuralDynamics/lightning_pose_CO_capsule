@@ -1,6 +1,6 @@
 # Welcome!
 
-This is a repository for [lightning-pose code ocean capsule](https://codeocean.allenneuraldynamics.org/capsule/0585042/tree) showing how to train and test a LP model on the AIND behavior data step by step.
+This is a [repository](https://github.com/AllenNeuralDynamics/lightning_pose_CO_capsule) for [lightning-pose code ocean capsule](https://codeocean.allenneuraldynamics.org/capsule/0585042/tree) showing how to train and test a LP model on the AIND behavior data step by step.
 [Previous version](https://codeocean.allenneuraldynamics.org/capsule/5949595/tree) for 2023 pose-tracking Hackathon stops updating.
 
 ## Usage
