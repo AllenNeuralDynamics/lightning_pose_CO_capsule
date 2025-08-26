@@ -1,5 +1,6 @@
-# hash:sha256:57ba09552714e05bdcdafd78335375c1c2a9aafe8375afcae951bc59956d2beb
-FROM registry.codeocean.allenneuraldynamics.org/codeocean/miniconda3:4.9.2-cuda11.7.0-cudnn8-ubuntu20.04
+# hash:sha256:efe04cd2567bb9241fc6b72a3fb36d96271710494fb18df0bd31e189420457d0
+ARG REGISTRY_HOST
+FROM $REGISTRY_HOST/codeocean/cuda-miniconda-jupyterlab:latest
 
 ARG DEBIAN_FRONTEND=noninteractive
 
@@ -9,6 +10,7 @@ COPY git-askpass /
 
 RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 
-
-COPY postInstall /
-RUN /postInstall
+RUN pip install -U --no-cache-dir \
+    lightning-pose==1.6.0 \
+    moviepy==1.0.3 \
+    ipywidgets==8.1.2
